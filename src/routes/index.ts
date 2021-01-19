@@ -1,7 +1,7 @@
 import { Router } from "express";
 import UserRoutes from "./UserRoutes";
 
-class Index {
+class indexRoutes {
   public useRoutes: Router;
   constructor() {
     this.useRoutes = Router();
@@ -9,4 +9,4 @@ class Index {
   }
 }
 
-export default new Index().useRoutes;
+export default new indexRoutes().useRoutes;

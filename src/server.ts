@@ -1,7 +1,7 @@
 import express, { application } from "express";
 import bodyParser from "body-parser";
 import { config as dotenv } from "dotenv";
-import Index from "./routes/index";
+import indexRoutes from "./routes/index";
 
 class App {
   public app = application;
@@ -18,7 +18,7 @@ class App {
   }
 
   protected routes(): void {
-    this.app.use(Index);
+    this.app.use(indexRoutes);
   }
 }
 
